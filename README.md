@@ -1,1 +1,1 @@
-# noMorse [![Build Status](https://travis-ci.com/Eddydpyl/noMorse.svg?token=Fpth26ybpqjsTJdNeqmb&branch=master)](https://travis-ci.com/Eddydpyl/noMorse)
+# noMorse [![Build Status](https://travis-ci.org/Eddydpyl/noMorse.svg?branch=master)](https://travis-ci.org/Eddydpyl/noMorse)
