@@ -23,7 +23,7 @@ public class MessageListenerService extends NotificationListenerService {
 
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
-        if(sbn.getPackageName().equals(Constants.WHATSAPP_PACKAGE)){
+        if (sbn.getPackageName().equals(Constants.WHATSAPP_PACKAGE)) {
             // Notification comes from WhatsApp
         }
     }
