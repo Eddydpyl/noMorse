@@ -19,12 +19,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import dpyl.eddy.nomorse.Constants;
 import dpyl.eddy.nomorse.R;
 
-public class DrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+import static dpyl.eddy.nomorse.Constants.STATE_ABOUT;
+import static dpyl.eddy.nomorse.Constants.STATE_KEY;
+import static dpyl.eddy.nomorse.Constants.STATE_SETTINGS;
 
-    private static final String STATE_KEY = "state";
+public class DrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private Integer state;
 
@@ -52,21 +53,17 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         ImageView navHeader = navigationView.getHeaderView(0).findViewById(R.id.imageView_navHeader);
         navHeader.setImageDrawable(roundedBitmapDrawable);
 
-        state = savedInstanceState != null ? savedInstanceState.getInt(STATE_KEY) : Constants.STATE_SETTINGS;
+        state = savedInstanceState != null ? savedInstanceState.getInt(STATE_KEY) : STATE_SETTINGS;
         navigationView.getMenu().getItem(state).setChecked(true);
 
         Fragment fragment;
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (state) {
-            case Constants.STATE_SETTINGS:
+            case STATE_SETTINGS:
                 fragment = new SettingsFragment();
                 setTitle(R.string.menu_settings);
                 break;
-            case Constants.STATE_CONTRIBUTE:
-                fragment = new ContributeFragment();
-                setTitle(R.string.menu_contribute);
-                break;
-            case Constants.STATE_ABOUT:
+            case STATE_ABOUT:
                 fragment = new AboutFragment();
                 setTitle(R.string.menu_about);
                 break;
@@ -78,9 +75,9 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        savedInstanceState.putInt(STATE_KEY, state);
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(STATE_KEY, state);
     }
 
     @Override
@@ -101,7 +98,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem menuItem = menu.findItem(R.id.action_help);
         if (menuItem != null) {
-            if (state == Constants.STATE_SETTINGS) menuItem.setVisible(true);
+            if (state == STATE_SETTINGS) menuItem.setVisible(true);
             else menuItem.setVisible(false);
         } return super.onPrepareOptionsMenu(menu);
     }
@@ -119,15 +116,11 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         int id = item.getItemId();
         Fragment fragment = null;
         if (id == R.id.nav_manage) {
-            state = Constants.STATE_SETTINGS;
+            state = STATE_SETTINGS;
             fragment = new SettingsFragment();
             setTitle(R.string.menu_settings);
-        } else if (id == R.id.nav_contribute) {
-            state = Constants.STATE_CONTRIBUTE;
-            fragment = new ContributeFragment();
-            setTitle(R.string.menu_contribute);
         } else if (id == R.id.nav_about) {
-            state = Constants.STATE_ABOUT;
+            state = STATE_ABOUT;
             fragment = new AboutFragment();
             setTitle(R.string.menu_about);
         }
