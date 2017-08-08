@@ -1,7 +1,9 @@
 <resources>
 
     <string name="app_name">noMorse</string>
-    <string name="service_name">Message Listener</string>
+    <string name="title_activity_whats_app">WhatsApp Settings</string>
+    <string name="title_service_message_listener">Message Listener</string>
+
     <string name="action_help">Help</string>
 
     <string name="menu_settings">Settings</string>
@@ -13,6 +15,7 @@
 
     <string name="url_github">https://github.com/Eddydpyl/noMorse</string>
 
+    <string name="content_contribute">Contribute to the project</string>
     <string name="content_about">
         MIT License
         \n\n
@@ -35,10 +38,8 @@
         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     </string>
-    <string name="content_contribute">Contribute to the project!</string>
-    <string name="content_whatsApp">WhatsApp</string>
 
     <string name="desc_github">Github Logo</string>
-    <string name="desc_whatsApp">WhatsApp Logo</string>
+    <string name="desc_whats_app">WhatsApp Logo</string>
 
 </resources>
