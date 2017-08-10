@@ -38,8 +38,20 @@
         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     </string>
+    <string name="content_notification_none">Silent</string>
+    <string name="content_whats_app_message_notifications">Message notifications</string>
+    <string name="content_whats_app_group_notifications">Group notifications</string>
+    <string name="content_whats_app_notification_tone">Notification tone</string>
+    <string name="content_whats_app_vibrate">Vibrate</string>
 
     <string name="desc_github">Github Logo</string>
     <string name="desc_whats_app">WhatsApp Logo</string>
+
+    <string name="pref_whats_app_message_notifications">messageNotifications</string>
+    <string name="pref_whats_app_message_notification_tone">messageNotificationTone</string>
+    <string name="pref_whats_app_message_vibrate">messageVibrate</string>
+    <string name="pref_whats_app_group_notifications">groupNotifications</string>
+    <string name="pref_whats_app_group_notification_tone">groupNotificationTone</string>
+    <string name="pref_whats_app_group_vibrate">groupVibrate</string>
 
 </resources>

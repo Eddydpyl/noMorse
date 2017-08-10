@@ -1,8 +1,10 @@
-package dpyl.eddy.nomorse;
+package dpyl.eddy.nomorse.controller;
 
 import android.content.Intent;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
+
+import dpyl.eddy.nomorse.Constants;
 
 public class MessageListenerService extends NotificationListenerService {
 

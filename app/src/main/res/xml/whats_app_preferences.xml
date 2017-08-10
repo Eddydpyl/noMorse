@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/content_whats_app_message_notifications"
+        android:key="@string/pref_whats_app_message_notifications">
+
+        <dpyl.eddy.nomorse.controller.WhatsAppRingtonePreference
+            android:title="@string/content_whats_app_notification_tone"
+            android:key="@string/pref_whats_app_message_notification_tone"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:title="@string/content_whats_app_vibrate"
+            android:key="@string/pref_whats_app_message_vibrate"
+            android:entries="@array/whats_app_vibration_entries"
+            android:entryValues="@array/whats_app_vibration_values"
+            android:defaultValue="1"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/content_whats_app_group_notifications"
+        android:key="@string/pref_whats_app_group_notifications">
+
+        <dpyl.eddy.nomorse.controller.WhatsAppRingtonePreference
+            android:title="@string/content_whats_app_notification_tone"
+            android:key="@string/pref_whats_app_group_notification_tone"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:title="@string/content_whats_app_vibrate"
+            android:key="@string/pref_whats_app_group_vibrate"
+            android:entries="@array/whats_app_vibration_entries"
+            android:entryValues="@array/whats_app_vibration_values"
+            android:defaultValue="1"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

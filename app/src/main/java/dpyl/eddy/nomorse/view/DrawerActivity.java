@@ -90,7 +90,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.drawer, menu);
+        getMenuInflater().inflate(R.menu.menu_help, menu);
         return true;
     }
 
