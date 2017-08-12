@@ -5,13 +5,13 @@
         android:title="@string/content_whats_app_message_notifications"
         android:key="@string/pref_whats_app_message_notifications">
 
-        <dpyl.eddy.nomorse.controller.WhatsAppRingtonePreference
+        <dpyl.eddy.nomorse.view.WhatsAppRingtonePreference
             android:title="@string/content_whats_app_notification_tone"
             android:key="@string/pref_whats_app_message_notification_tone"
             android:ringtoneType="all"
             android:showDefault="true"
             android:showSilent="true"
-            android:defaultValue="0"/>
+            android:defaultValue="@string/uri_default_notification"/>
 
         <ListPreference
             android:title="@string/content_whats_app_vibrate"
@@ -26,13 +26,13 @@
         android:title="@string/content_whats_app_group_notifications"
         android:key="@string/pref_whats_app_group_notifications">
 
-        <dpyl.eddy.nomorse.controller.WhatsAppRingtonePreference
+        <dpyl.eddy.nomorse.view.WhatsAppRingtonePreference
             android:title="@string/content_whats_app_notification_tone"
             android:key="@string/pref_whats_app_group_notification_tone"
             android:ringtoneType="all"
             android:showDefault="true"
             android:showSilent="true"
-            android:defaultValue="0"/>
+            android:defaultValue="@string/uri_default_notification"/>
 
         <ListPreference
             android:title="@string/content_whats_app_vibrate"

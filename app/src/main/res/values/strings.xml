@@ -14,6 +14,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="url_github">https://github.com/Eddydpyl/noMorse</string>
+    <string name="uri_default_notification">content://settings/system/notification_sound</string>
 
     <string name="content_contribute">Contribute to the project</string>
     <string name="content_about">

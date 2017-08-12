@@ -1,4 +1,4 @@
-package dpyl.eddy.nomorse.controller;
+package dpyl.eddy.nomorse.view;
 
 import android.content.Context;
 import android.content.Intent;
