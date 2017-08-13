@@ -6,7 +6,7 @@ This open-source project aims to fix the problem by instructing its users on how
 <p align="center"><img src="/app/src/main/res/raw/logo_without_backbround.png" alt="Logo" width="250"/></p>
 
 ## Contribute to the project
-Right now the biggest issue is the unpredictable behaviour of our [MessageListenerService](https://github.com/Eddydpyl/noMorse/blob/master/app/src/main/java/dpyl/eddy/nomorse/controller/MessageListenerService.java) due to how Android handles services (I assume Android stops the service every now and then, meaning a notification may arrive and the App not work). If anyone could figure out a better implementation, that would be enourmously helpful. Also, the logic behind deciding when to vibrate or play a sound could probably be tuned up a bit.
+Right now the biggest issue is the unpredictable behaviour of our [MessageListenerService](https://github.com/Eddydpyl/noMorse/blob/master/app/src/main/java/dpyl/eddy/nomorse/controller/MessageListenerService.java) due to how Android handles services (I assume Android stops the service every now and then, meaning a notification may arrive and the App won't work). If anyone could figure out a better implementation, that would be enourmously helpful. Also, the logic behind deciding when to vibrate or play a sound could probably be tuned up a bit.
 
 ### Support for other messaging Apps
 If you'd like to help in adding support for other Apps, while respecting the current project structure, follow these steps:
