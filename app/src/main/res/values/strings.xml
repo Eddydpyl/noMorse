@@ -44,6 +44,12 @@
     <string name="content_whats_app_group_notifications">Group notifications</string>
     <string name="content_whats_app_notification_tone">Notification tone</string>
     <string name="content_whats_app_vibrate">Vibrate</string>
+    <string name="content_request_permission_title">Permissions Needed</string>
+    <string name="content_request_permission_message">This App requires you to allow it to listen to your notifications for it to work. We only read non-identifying information and never share anything with anyone.</string>
+    <string name="content_help_settings_title">What is this?</string>
+    <string name="content_help_settings_message">This App aims to improve the sound and vibration aspects of notifications, namely the annoyance that is a rapid stream of incoming messages. In order to do so for the Apps listed here, you must follow the instructions provided to turn off their sounds and vibrations, otherwise it will just make everything worse.</string>
+    <string name="content_help_whats_app_title">Configure WhatsApp</string>
+    <string name="content_help_whats_app_message">For these settings to work as intended, you must turn them off inside WhatsApp\'s application. From its main screen, go to Settings -> Notifications and set Notification tone to Silent and Vibrate to Off.</string>
 
     <string name="desc_github">Github Logo</string>
     <string name="desc_whats_app">WhatsApp Logo</string>

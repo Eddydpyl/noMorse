@@ -1,5 +1,6 @@
 package dpyl.eddy.nomorse.view;
 
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -13,6 +14,7 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -20,6 +22,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import dpyl.eddy.nomorse.R;
+import dpyl.eddy.nomorse.Utility;
 
 import static dpyl.eddy.nomorse.Constants.STATE_ABOUT;
 import static dpyl.eddy.nomorse.Constants.STATE_KEY;
@@ -72,6 +75,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 setTitle(R.string.menu_settings);
         } fragmentManager.beginTransaction().replace(R.id.content, fragment).commit();
 
+        Utility.enableListener(this);
     }
 
     @Override
@@ -106,7 +110,13 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_help) {
-            // TODO
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage(R.string.content_help_settings_message).setTitle(R.string.content_help_settings_title);
+            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    dialog.dismiss();
+                }
+            }); builder.create().show();
             return true;
         } return super.onOptionsItemSelected(item);
     }
