@@ -1,7 +1,9 @@
 <resources>
 
     <string name="app_name">noMorse</string>
-    <string name="service_name">Message Listener</string>
+    <string name="title_activity_whats_app">WhatsApp Settings</string>
+    <string name="title_service_message_listener">Message Listener</string>
+
     <string name="action_help">Help</string>
 
     <string name="menu_settings">Settings</string>
@@ -12,7 +14,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="url_github">https://github.com/Eddydpyl/noMorse</string>
+    <string name="uri_default_notification">content://settings/system/notification_sound</string>
 
+    <string name="content_contribute">Contribute to the project</string>
     <string name="content_about">
         MIT License
         \n\n
@@ -35,10 +39,26 @@
         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     </string>
-    <string name="content_contribute">Contribute to the project!</string>
-    <string name="content_whatsApp">WhatsApp</string>
+    <string name="content_notification_none">Silent</string>
+    <string name="content_whats_app_message_notifications">Message notifications</string>
+    <string name="content_whats_app_group_notifications">Group notifications</string>
+    <string name="content_whats_app_notification_tone">Notification tone</string>
+    <string name="content_whats_app_vibrate">Vibrate</string>
+    <string name="content_request_permission_title">Permissions Needed</string>
+    <string name="content_request_permission_message">This App requires you to allow it to listen to your notifications for it to work. We only read non-identifying information and never share anything with anyone.</string>
+    <string name="content_help_settings_title">What is this?</string>
+    <string name="content_help_settings_message">This App aims to improve the sound and vibration aspects of notifications, namely the annoyance that is a rapid stream of incoming messages. In order to do so for the Apps listed here, you must follow the instructions provided to turn off their sounds and vibrations, otherwise it will just make everything worse.</string>
+    <string name="content_help_whats_app_title">Configure WhatsApp</string>
+    <string name="content_help_whats_app_message">For these settings to work as intended, you must turn them off inside WhatsApp\'s application. From its main screen, go to Settings -> Notifications and set Notification tone to Silent and Vibrate to Off.</string>
 
     <string name="desc_github">Github Logo</string>
-    <string name="desc_whatsApp">WhatsApp Logo</string>
+    <string name="desc_whats_app">WhatsApp Logo</string>
+
+    <string name="pref_whats_app_message_notifications">messageNotifications</string>
+    <string name="pref_whats_app_message_notification_tone">messageNotificationTone</string>
+    <string name="pref_whats_app_message_vibrate">messageVibrate</string>
+    <string name="pref_whats_app_group_notifications">groupNotifications</string>
+    <string name="pref_whats_app_group_notification_tone">groupNotificationTone</string>
+    <string name="pref_whats_app_group_vibrate">groupVibrate</string>
 
 </resources>
